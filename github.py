@@ -5,6 +5,7 @@ import base64
 
 class GitHub(object):
 
+	# This method uses urllib to call the github OAuth endpoint and return JSON (auth with token or error)
 	def login(self, username, password, github_client_id, github_secret, github_user_agent):
 		logging.debug("enter")
 
